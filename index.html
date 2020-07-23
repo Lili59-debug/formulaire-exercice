@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Formulaire</title>
+  <meta name="description" content="Le 2e formulaire d'Aurélie Constant">
+  <meta name="author" content="Aurélie Constant">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container">
+    <img src="img/logo.png" alt="globe" title="Globe" height="100" width="100">
+    <h1>Formations web</h1>
+  </header>
+  <main class="container">
+    <h2>Formulaire d'inscription</h2>
+    <p>(*) Veuillez remplir tous les champs obligatoires.</p>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Coordonnées</legend>
+
+        <label>Civilité : <span>(*)</span></label>
+        <input type="radio">Monsieur
+        <input type="radio">Madame
+
+        <label>Nom : <span>(*)</span></label>
+        <div class="display"><input type="text" placeholder="Votre nom" required></div>
+
+        <label>Prénom : <span>(*)</span></label>
+        <div class="display"><input type="text" placeholder="Votre prénom" required></div>
+
+        <label>Email : <span>(*)</span></label>
+        <div class="display"><input type="email" placeholder="nom@domaine.com" required></div>
+
+        <label>Numéro de téléphone :</label>
+        <div class="display"><input type="tel" placeholder="Votre numéro de téléphone"></div>
+
+      </fieldset>
+      <fieldset>
+        <legend>Choix des formations</legend>
+
+        <label>Je m'inscris à : <span>(*)</span></label>
+        <input type="checkbox">HTML-CSS
+        <input type="checkbox">JavaScript
+        <input type="checkbox">Node JS
+        <input type="checkbox">MongoDB
+        <input type="checkbox">Angular
+        <input type="checkbox">React
+
+        <label>Choix du centre : <span>(*)</span></label>
+        <select required>
+          <option value="" selected disabled> -- Veuillez faire un choix
+            --</option>
+          <option value="Paris">Paris</option>
+          <option value="Lille">Lille</option>
+          <option value="Strasbourg">Strasbourg</option>
+          <option value="Bordeaux">Bordeaux</option>
+          <option value="Toulouse">Toulouse</option>
+        </select>
+
+        <label>Remarques :</label>
+        <div class="display"><textarea rows="6" cols="50">Entrez ici votre message</textarea></div>
+
+        <div class="display"><input type="checkbox">(*) En soumettant ce formulaire, j'accepte la <a href="politique_de_confidentialite.html">politique de confidentialité</a> du site ; j'accepte que les informations saisies soient exploitées dans le
+          cadre de mon inscription à la formation.</div>
+        <input type="checkbox">J'accepte de recevoir la newsletter.
+      </fieldset>
+      <div class="display"><button type="submit">Envoyer</button></div>
+    </form>
+  </main>
+  <footer class="container">© Exercice pédagogique fourni par <a href="https://consultantweb.eu" target="_blank">Christiane Dumont</a></footer>
+</body>
+
+</html>

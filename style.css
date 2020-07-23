@@ -1,0 +1,99 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #555;
+  background-image: url(img/fond.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1rem;
+  margin: 0;
+}
+
+header, main, footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+a {
+  color: royalblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+fieldset {
+  color: #122430;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+button {
+  display: block;
+  background-color: #DDD;
+  margin: auto;
+  border: 0px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  width: 25%;
+  vertical-align: top;
+}
+
+input {
+  margin: 5px 10px 20px 10px;
+}
+
+input[type="text"] {
+  width: 75%;
+}
+
+input[type="email"] {
+  width: 75%;
+}
+
+.display {
+  display: block;
+}
+
+legend {
+  font-weight: bold;
+}
+
+span {
+  color: red;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width : 1024px) {
+  label {
+    width: 25%;
+  }
+
+  input[type="text"] {
+    width: 70%;
+  }
+}
